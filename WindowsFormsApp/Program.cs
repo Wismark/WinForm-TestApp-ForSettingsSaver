@@ -16,7 +16,6 @@ namespace WindowsFormsApp
             Application.ApplicationExit += Application_ApplicationExit;
             SettingsSaver.SettingsSaver.Instance.Init(indent:true);
             Application.Run(new FormTest());
-            SettingsSaver.SettingsSaver.Instance.SaveData();
         }
 
         private static void Application_ApplicationExit(object sender, EventArgs e)
